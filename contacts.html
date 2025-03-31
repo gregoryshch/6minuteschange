@@ -4,23 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>6 Minutes Change | Contacts</title>
+    
     <style>
-        body { font-family: Arial; background: #f9f9f9; max-width: 800px; margin: auto; padding: 20px; color: #333; }
-        nav { text-align: center; margin-bottom: 30px; }
-        nav a { margin: 0 15px; color: #007BFF; text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
-        footer { text-align: center; margin-top: 40px; color: #666; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: #f4f4f4;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #2c3e50;
+            min-height: 100vh;
+            padding-top: 30px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .sidebar a {
+            display: block;
+            padding: 15px 20px;
+            margin: 10px;
+            background-color: #34495e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .sidebar a:hover {
+            background-color: #1abc9c;
+        }
+        .content {
+            padding: 40px;
+            flex-grow: 1;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+        }
     </style>
+
 </head>
 <body>
-    <h1>Contact Me</h1>
-    <nav>
+    <div class="sidebar">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
         <a href="contacts.html">Contacts</a>
-    </nav>
-    <p>If you'd like to reach out, email me at:</p>
-    <p><strong>Email:</strong> <a href="mailto:gregoryshch@gmail.com">gregoryshch@gmail.com</a></p>
-    <footer>&copy; 2025 6 Minutes Change</footer>
+    </div>
+    <div class="content">
+        <h1>Contact Me</h1>
+        <p>Want to get in touch or collaborate? Reach out by email:</p>
+        <p><strong>Email:</strong> <a href="mailto:gregoryshch@gmail.com">gregoryshch@gmail.com</a></p>
+        <footer>&copy; 2025 6 Minutes Change</footer>
+    </div>
 </body>
 </html>
