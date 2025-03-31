@@ -32,6 +32,10 @@
         .sidebar a:hover {
             background-color: #1abc9c;
         }
+        .sidebar a.active {
+            background-color: #1abc9c;
+            font-weight: bold;
+        }
         .content {
             padding: 40px;
             flex-grow: 1;
@@ -46,7 +50,7 @@
 </head>
 <body>
     <div class="sidebar">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">About Me</a>
         <a href="contacts.html">Contacts</a>
     </div>
